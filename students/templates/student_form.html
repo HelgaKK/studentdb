@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Сервіс обліку груп</title>
+    <meta name="description" value = "Система обліку студентів навчального закладу">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- rendering and zooming differ.devices -->
+
+    <!-- Include Styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/student_form.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Header -->
+        <div class="row" id="header">
+            <!-- Logo -->
+            <div class="col-xs-8">
+                <h1>Форма редагування Студента</h1>
+            </div>
+        </div>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-offset-3">
+            <form>
+              <div class="input-group">
+                <span class="input-group-addon">Ім'я</span>
+                <input type="text" class="form-control" id="st_name">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">По-батькові</span>
+                <input type="text" class="form-control" id="st_secname" >
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">Прізвище</span>
+                <input type="text" class="form-control" id="st_surname">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">Квиток №      </span>
+                <input type="text" class="form-control" id="st_card">
+              </div>
+
+               <div class="input-group">
+                <span class="input-group-addon">Дата народження</span>
+                <input type="date" class="form-control" id="st_birth">
+              </div>
+
+              <div class="input-group">
+                <span class="input-group-addon">Фото</span>
+                <input type="image" class="form-control" value="c:/pictures/student1.jpg" id="st_photo">
+
+
+                <label for="st_photo">Змінити</label>
+                <input type="file" id="st_photo">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">Група</span>
+                <select class="form-control" id="st_group">
+
+                        <option>МТМ-23</option>
+                        <option>МТМ-22</option>
+                        <option>МТМ-21</option>
+                        <option>ФТМ-21</option>
+                        <option>КТМ-21</option>
+                        <option>ЛТМ-22</option>
+                </select>
+              </div>
+               <div class="input-group">
+                <span class="input-group-addon">Додаткові нотатки</span>
+                <textarea class="form-control" rows="3"></textarea>
+               </div>
+
+
+              <button type="submit" class="btn btn-primary">Зберегти</button>
+              <button type="submit" class="btn btn-default">Скасувати</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Javascripts Section -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
